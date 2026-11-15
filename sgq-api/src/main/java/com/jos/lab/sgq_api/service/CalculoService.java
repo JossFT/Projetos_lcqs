@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
+import java.util.List;
 
 @Service
 public class CalculoService {
@@ -59,4 +60,8 @@ public class CalculoService {
         String formatado = df.format(valor);
         return formatado.replace("E", " × 10^").replace("+", "");
     }
+    // Consulta todos os resultados registrados no banco
+public List<ResultadoUfc> consultarHistorico() {
+    return resultadoRepository.findAll();
+}
 }

@@ -4,3 +4,13 @@ cd sgq-api // permitir acesso à pasta
 
 Ctrl + C // encerrar o programa
 
+# Inicializa o repositório na pasta certa
+git init
+
+# Adiciona apenas os arquivos do projeto (o .gitignore vai filtrar o lixo)
+git add .
+
+# Cria o registro
+git commit -m "Projeto SGQ-API com MySQL e JPA"
+
+# Envia para o GitHub (usando a interface visual que é mais fácil)
